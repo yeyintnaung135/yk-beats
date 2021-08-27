@@ -118,6 +118,9 @@ Back to Top
 #back-to-top .top { position: fixed; bottom: 75px; right: 30px; margin: 0px; color: var(--white-color); background: var(--primary-color); z-index: 999; border: 1px solid var(--primary-color); font-size: 26px; width: 50px; height: 50px; text-align: center; line-height: 50px; -webkit-border-radius: 00px; -moz-border-radius: 00px; border-radius: 00px; }
 #back-to-top .top:hover { background: var(--primarydark-color); color: var(--white-color); border: 1px solid var(--primarydark-color); }
 
+.own-div{
+    padding-top:122px;
+}
 /*================================================
 WordPress Core
 ================================================*/
@@ -648,31 +651,31 @@ Sidebar Men
 /*================================================
 Breadcrum
 ================================================*/
-.gen-breadcrumb { background: var(--black-color); color: var(--white-color); padding: 60px 0; text-align: center; position: relative; background-attachment: fixed !important; background-size: cover !important; }
-.gen-breadcrumb:before { position: absolute; content: ""; top: 0; left: 0; width: 100%; height: 100%; background: var(--black-color); opacity: 0.9; }
-.gen-breadcrumb-container { display: inline-block; }
-.gen-breadcrumb .gen-breadcrumb-title h1 { font-size: 56px; line-height: 64px; margin-bottom: 15px; color: var(--white-color); }
-.gen-breadcrumb-container .breadcrumb { background: transparent; padding: 0; margin: 0; }
-.gen-breadcrumb-container .breadcrumb li { text-transform: capitalize; list-style-type: none; margin-right: 15px; padding-left: 0; }
-.gen-breadcrumb-container .breadcrumb li.active { color: var(--primary-color); }
-.gen-breadcrumb-container .breadcrumb li a { color: var(--white-color); }
-.gen-breadcrumb-container .breadcrumb li a:hover { color: var(--primary-color); }
-.gen-breadcrumb-container .breadcrumb .breadcrumb-item+.breadcrumb-item::before { content: "\f125"; font-size: 12px; font-family: "Ionicons"; padding-right: 15px; }
+.g_b { background: var(--black-color); color: var(--white-color); padding-bottom: 17px;padding-top:8%; text-align: center; position: relative; background-attachment: fixed !important; background-size: cover !important; }
+.g_b:before { position: absolute; content: ""; top: 0; left: 0; width: 100%; height: 100%; background: var(--black-color); opacity: 0.9; }
+.g_b-container { display: inline-block; }
+.g_b .g_b-title h1 { font-size: 56px; line-height: 64px; margin-bottom: 15px; color: var(--white-color); }
+.g_b-container .breadcrumb { background: transparent; padding: 0; margin: 0; }
+.g_b-container .breadcrumb li { text-transform: capitalize; list-style-type: none; margin-right: 15px; padding-left: 0; }
+.g_b-container .breadcrumb li.active { color: var(--primary-color); }
+.g_b-container .breadcrumb li a { color: var(--white-color); }
+.g_b-container .breadcrumb li a:hover { color: var(--primary-color); }
+.g_b-container .breadcrumb .breadcrumb-item+.breadcrumb-item::before { content: "\f125"; font-size: 12px; font-family: "Ionicons"; padding-right: 15px; }
 .gen-yoest-breadcumbs #breadcrumbs { margin: 0; padding: 0; }
 .gen-yoest-breadcumbs #breadcrumbs span { color: var(--dark-color); }
 .gen-yoest-breadcumbs #breadcrumbs span a { padding: 0 5px; }
 .gen-yoest-breadcumbs #breadcrumbs span strong { font-weight: 400; padding-left: 5px; }
 @media(max-width:1023px) {
-	.gen-breadcrumb { text-align: center; }
-	.gen-breadcrumb .gen-breadcrumb-title h1 { font-size: 42px; line-height: 50px; }
-	.gen-breadcrumb-container .breadcrumb { display: inline-flex; }
-	.gen-breadcrumb-img.text-right { text-align: center !important; }
+	.g_b { text-align: center; }
+	.g_b .g_b-title h1 { font-size: 42px; line-height: 50px; }
+	.g_b-container .breadcrumb { display: inline-flex; }
+	.g_b-img.text-right { text-align: center !important; }
 }
 @media(max-width:767px) {
-	.gen-breadcrumb .gen-breadcrumb-title h1 { font-size: 34px; line-height: 42px; }
-	.gen-breadcrumb-container .breadcrumb li, .gen-breadcrumb-container .breadcrumb li i { font-size: 14px; }
-	.gen-breadcrumb-container .breadcrumb li { margin-right: 10px; }
-	.gen-breadcrumb-container .breadcrumb .breadcrumb-item+.breadcrumb-item::before { padding-right: 10px; font-size: 12px; }
+	.g_b .g_b-title h1 { font-size: 34px; line-height: 42px; }
+	.g_b-container .breadcrumb li, .g_b-container .breadcrumb li i { font-size: 14px; }
+	.g_b-container .breadcrumb li { margin-right: 10px; }
+	.g_b-container .breadcrumb .breadcrumb-item+.breadcrumb-item::before { padding-right: 10px; font-size: 12px; }
 }
 
 /*================================================
@@ -785,7 +788,7 @@ Swiper Pagination
 /*================================================
 Page id
 ===============================================*/
-.page-id-5617 .gen-breadcrumb { display: none !important; }
+.page-id-5617 .g_b { display: none !important; }
 .page-id-5617 .site-main { padding: 0 !important; }
 .page-id-6424 .site-main { padding-bottom: 0 !important; }
 
@@ -1114,7 +1117,7 @@ Notification
 /*================================================
 Masvideos Breadcrumb
 ===============================================*/
-.content-area .site-main .page-header, .single-movie .gen-breadcrumb, .single-episode .gen-breadcrumb, .single-tv_show .gen-breadcrumb, .single-video .gen-breadcrumb { display: none; }
+.content-area .site-main .page-header, .single-movie .g_b, .single-episode .g_b, .single-tv_show .g_b, .single-video .g_b { display: none; }
 .masvideos-breadcrumb { display: none; }
 .masvideos-control-bar { align-items: center; margin-bottom: 20px; }
 
@@ -1411,10 +1414,13 @@ Banner 2
 .gen-movie-contain-style-3 a.playBut .circle { stroke: var(--white-color); stroke-dasharray: 0; stroke-dashoffset: 0; -webkit-transition: all 0.5s ease-in-out; opacity: 1; }
 .gen-movie-contain-style-3 a.playBut:hover .circle { opacity: 1; stroke-dasharray: 10; stroke-dashoffset: 10; }
 @media(max-width:1399px) {
-	.gen-movie-contain-style-3 .gen-movie-info h3 { font-size: 54px; line-height: 62px; }
+
+    .gen-movie-contain-style-3 .gen-movie-info h3 { font-size: 54px; line-height: 62px; }
 }
 @media(max-width:1365px) {
-	.gen-movie-contain-style-3 .gen-movie-info h3 { font-size: 62px; line-height: 70px; }
+    .g_b{padding-top:12%;padding-bottom:0px;}
+
+    .gen-movie-contain-style-3 .gen-movie-info h3 { font-size: 62px; line-height: 70px; }
 }
 @media(max-width:1023px) {
 	.gen-movie-contain-style-3 .gen-movie-info h3 { font-size: 54px; line-height: 62px; }
@@ -1447,9 +1453,15 @@ library
 .masvideos-MyAccount-navigation ul li a.active { background: var(--primary-color); color: var(--white-color); }
 @media(max-width:1299px) {
 	.masvideos-MyAccount-navigation ul li a { padding: 12px 15px; }
+    .g_b{padding-top:0%;padding-bottom:0px;}
+    .own-div{
+        padding-top:2px;
+    }
 }
 @media(max-width:979px) {
 	.masvideos-MyAccount-navigation ul { display: inline-block; width: 100%; }
+    .g_b{padding-top:0%;padding-bottom:0px;}
+
 	.masvideos-MyAccount-navigation ul li { margin: 0 15px 15px 0; list-style: none; display: flex; float: left; }
 }
 @media(max-width:479px) {
