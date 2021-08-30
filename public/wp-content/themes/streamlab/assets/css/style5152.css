@@ -99,6 +99,7 @@ input::placeholder, textarea::placeholder { color: var(--secondary-color); }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: var(--secondary-color); }
 input::-ms-input-placeholder, textarea::-ms-input-placeholder { color: var(--secondary-color); }
 
+
 /*===== Select =====*/
 select, select.form-control { border: 1px solid var(--black-color); color: var(--white-color); background: var(--black-color); width: 100%; float: left; padding: 0 30px 0 30px; height: 51px; line-height: 48px; outline: none; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-image: url('data:image/svg+xml;utf8,<svg fill=\'%23999999\' height=\'24\' viewBox=\'0 0 24 24\' width=\'24\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/><path d=\'M0 0h24v24H0z\' fill=\'none\'/></svg>'); background-repeat: no-repeat; background-position: right 16px bottom 50%; background-size: 20px 20px; }
 
@@ -124,6 +125,8 @@ Back to Top
 /*================================================
 WordPress Core
 ================================================*/
+
+
 .alignnone { margin: 5px 20px 20px 0; }
 .aligncenter, div.aligncenter { display: block; margin: 5px auto 15px auto; }
 .alignright { float: right; margin: 5px 0 20px 20px; }
@@ -465,7 +468,7 @@ header#gen-header .gen-top-header .gen-header-social ul li:last-child { border-r
 
 /*===== Logo =====*/
 header#gen-header .gen-bottom-header .navbar .navbar-brand { line-height: 80px; }
-header#gen-header .gen-bottom-header .navbar .navbar-brand img { height: 69px; max-width: initial; }
+header#gen-header .gen-bottom-header .navbar .navbar-brand img { height: 60px; max-width: initial; }
 
 /*===== Header Navbar Bar =====*/
 header#gen-header .gen-bottom-header { min-height: 90px; }

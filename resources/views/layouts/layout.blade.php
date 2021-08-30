@@ -19,6 +19,9 @@
     <link rel="alternate" type="application/rss+xml" title="Streamlab &raquo; TV Shows Feed" href="feed/index.html"/>
 
     <style>
+        .yk-banner-img{
+            width:100% !important;
+        }
         img.wp-smiley,
         img.emoji {
             display: inline !important;

@@ -1,6 +1,6 @@
 <div class="own-div" style="">
 <div class="owl-carousel">
-<img src="{{url('wp-content/uploads/2019/02/23-1.jpg')}}"/>
+<img class="yk-banner-img" src="{{url('photos/banner.jpg')}}"/>
 </div>
 
 
