@@ -5,9 +5,9 @@
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <a class="navbar-brand" href="../index.html">
-                            <img class="img-fluid logo" src="{{url('wp-content/uploads/2021/02/logo-1.png')}}"
-                                 alt="streamlab">
+                            <img class="img-fluid logo" src="{{url('photos/logo.png')}}" alt="streamlab">
                         </a>
+
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <div id="gen-menu-contain" class="gen-menu-contain">
