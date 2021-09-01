@@ -32,9 +32,11 @@
 <script src="{{url('admindist/plugins/filterizr/jquery.filterizr.min.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{url('admindist/dist/js/demo.js')}}"></script>
+
 <!-- Page specific script -->
 <script>
     $(function () {
+        $('#reservationdatetime').datetimepicker({ icons: { time: 'far fa-clock' } });
 
     })
 </script>

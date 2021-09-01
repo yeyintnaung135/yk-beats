@@ -19,7 +19,8 @@ Route::get('/admin', function () {
     return view('admin.main');
 });
 Route::prefix('/admin')->group(function(){
-    Route::get('/video/create', 'VideosController@create');
+    Route::get('/video/create', 'VideosController@createform');
+    Route::post('/video/create', 'VideosController@create');
 });
 
 Auth::routes(['register'=>false,'reset'=>false]);
