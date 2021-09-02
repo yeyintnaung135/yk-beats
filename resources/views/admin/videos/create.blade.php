@@ -103,6 +103,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
@@ -111,9 +112,24 @@
                                 </div>
                             </div>
 
-                        </div>
-                        <div class="row">
-@csrf
+                            @csrf  <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label>Type</label>
+                                    <select class="form-control select2 select2-danger" name="type" data-dropdown-css-class="select2-danger" style="width: 100%;">
+                                        <option value="Trap" selected="selected">trap</option>
+                                        <option value="Sad Trap">sad trap</option>
+                                        <option value="Deep Sad">Deep Sad</option>
+                                        <option value="Romantic Love">Romantic Love</option>
+                                        <option value="Lofi">Lofi</option>
+                                        <option value="Funcky Trap">Funcky</option>
+                                        <option value="Free Style">Free Style</option>
+                                        <option value="Battle Rap">Battle Rap</option>
+
+
+                                    </select>
+                                </div>
+                                <!-- /.form-group -->
+                            </div>
                         <div class="col-12 col-sm-12 ">
                             <div class="form-group float-right">
                                 <button type="submit" class="btn btn-lg btn-primary">Submit</button>

@@ -19,9 +19,10 @@
     <link rel="alternate" type="application/rss+xml" title="Streamlab &raquo; TV Shows Feed" href="feed/index.html"/>
 
     <style>
-        .yk-banner-img{
-            width:100% !important;
+        .yk-banner-img {
+            width: 100% !important;
         }
+
         img.wp-smiley,
         img.emoji {
             display: inline !important;
@@ -34,17 +35,46 @@
             background: none !important;
             padding: 0 !important;
         }
-        #owl-demo .item img{
+
+        #owl-demo .item img {
             display: block;
             width: 100%;
             height: 400px;
         }
+
+        .own-button-place {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            z-index: 9;
+
+
+        }
+
+        .own-button-circle {
+            padding: 0;
+            width: 60px;
+            height: 60px;
+            opacity: 1;
+            display: inline-block;
+            line-height: 60px;
+            text-align: center;
+            -webkit-border-radius: 900px;
+            -moz-border-radius: 900px;
+            border-radius: 900px;
+            text-transform: uppercase;
+            background: var(--primary-color);
+            color: var(--white-color);
+            font-family: var(--title-fonts);
+            font-size: 16px;
+        }
+
         .owl-button {
-
-
-
             color: #fffcfc;
-            background:#3f9fff !important;
+            background: #3f9fff !important;
             border: 1px solid #3f9fff;
             font-size: 26px;
             width: 50px;
@@ -173,10 +203,6 @@
 </div>
 
 
-
-
-
-
 @yield('content')
 
 
@@ -191,6 +217,7 @@
 </div>
 <!-- === back-to-top End === -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script src="{{url('wp-content/plugins/contact-form-7/includes/js/scripts9dff.js?ver=5.3.2')}}"
         id='contact-form-7-js'></script>
@@ -230,17 +257,64 @@
         id='streamlab-load-more-js'></script>
 <script src="{{url('wp-includes/js/wp-embed.min9f31.js?ver=5.7.2')}}" id='wp-embed-js'></script>
 <script src="{{url('owl/dist/owl.carousel.js')}}"></script>
+
 <script>
-    jQuery(function($) {
+    $(document).ready(function () {
+        var vid = document.getElementById("video1a");
+        vid.onplay = function () {
+            $('#vbplay span').removeClass('fa-play');
+            $('#vbplay span').addClass('fa-pause');
+
+
+            $('#vbplay').fadeOut();
+        };
+        vid.onpause = function () {
+            $('#vbplay span').removeClass('fa-pause');
+            $('#vbplay span').addClass('fa-play');
+            $('#vbplay').fadeIn();
+
+
+        };
+
+        if (document.getElementById('video1a').pause) {
+            $('#vbplay span').removeClass('fa-pause');
+            $('#vbplay span').addClass('fa-play');
+
+            $('#vbplay').fadeIn();
+
+        }
+        $('#vbplay').click(function () {
+            if (vid.paused) {
+                $('#vbplay span').removeClass('fa-pause');
+                $('#vbplay span').addClass('fa-play');
+                $('#vbplay').fadeIn();
+                vid.play();
+
+
+            } else {
+                $('#vbplay span').removeClass('fa-pause');
+                $('#vbplay span').addClass('fa-play');
+                $('#vbplay').fadeIn();
+                vid.pause();
+
+            }
+
+
+        });
+
+    })
+    ;
+    jQuery(function ($) {
+
 
         $("#owl-demo").owlCarousel({
-            items : 1,
-            autoplay:true,
-            autoplayHoverPause:true,
-            dots:false,
-            loop:true,
+            items: 1,
+            autoplay: true,
+            autoplayHoverPause: true,
+            dots: false,
+            loop: true,
             nav: true,
-            navText: ["<i class='ion-ios-arrow-left owl-button'></i>","<i class='ion-ios-arrow-right owl-button'></i>"]
+            navText: ["<i class='ion-ios-arrow-left owl-button'></i>", "<i class='ion-ios-arrow-right owl-button'></i>"]
 
 
             // "singleItem:true" is a shortcut for:

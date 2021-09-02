@@ -11,6 +11,7 @@
 |
 */
 Route::get('/', 'VideosFrontController@index');
+Route::get('/detail/{id}', 'VideosFrontController@detail');
 
 
 Route::get('/admin', function () {

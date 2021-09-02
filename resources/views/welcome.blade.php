@@ -22,61 +22,50 @@
                                             @foreach($videos as $vd)
                                             <div class="col-xl-3 col-lg-4 col-md-6">
                                                 <article
-                                                    class="post-6406 tv_show type-tv_show status-publish has-post-thumbnail hentry tv_show_genre-adventure">
-                                                    <div class="gen-carousel-movies-style-1 movie-grid style-1">
+                                                    class="post-2508 tv_show type-tv_show status-publish has-post-thumbnail hentry tv_show_genre-drama tv_show_genre-fantasy tv_show_tag-brother tv_show_tag-brother-relationship tv_show_tag-kings tv_show_tag-vikings">
+                                                    <div class="gen-carousel-movies-style-3 movie-grid style-3">
                                                         <div class="gen-movie-contain">
                                                             <div class="gen-movie-img">
-                                                                <img
-                                                                    src="{{asset('storage/'.$vd->thumbnail)}}">
+                                                                <img src="{{asset('storage/'.$vd->thumbnail)}}">
+
                                                                 <div class="gen-movie-add">
 
 
-                                                                    <div class="wpulike wpulike-heart ">
-                                                                        <div class="wp_ulike_general_class">
-                                                                            <a href="../tv-show/ghost-of-sky/index.html?action=streamlab_core_process_simple_like&amp;post_id=6406&amp;nonce=d5a1e1d2c3&amp;is_comment=0&amp;disabled=true"
-                                                                               class="sl-button sl-button-6406"
-                                                                               data-nonce="d5a1e1d2c3"
-                                                                               data-post-id="6406" data-iscomment="0"
-                                                                               title="Like"><i class="far fa-heart"></i></a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <ul class="menu bottomRight">
-                                                                        <li class="share top">
-                                                                            <i class="fa fa-share-alt"></i>
-                                                                            <ul class="submenu">
-                                                                                <li>
-                                                                                    <a href="www.facebook6018.html?share=http://streamlab.gentechtree.com/tv-show/ghost-of-sky/"
-                                                                                       class="facebook"><i
-                                                                                            class="fab fa-facebook-f"></i></a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a href="#http://streamlab.gentechtree.com/tv-show/ghost-of-sky/"
-                                                                                       class="facebook"><i
-                                                                                            class="fab fa-instagram"></i></a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a href="#http://streamlab.gentechtree.com/tv-show/ghost-of-sky/"
-                                                                                       class="facebook"><i
-                                                                                            class="fab fa-twitter"></i></a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <div
-                                                                        class="tv-show-actions--link_add-to-playlist dropdown">
-                                                                        <a class="dropdown-toggle"
-                                                                           href="../tv-show/ghost-of-sky/index.html"
-                                                                           data-toggle="dropdown">+ Playlist</a>
-                                                                        <div class="dropdown-menu">
-                                                                            <a class="login-link"
-                                                                               href="../library/tv-show-playlists/index.html">Sign
-                                                                                in to add this tv show to a
-                                                                                playlist.</a></div>
-                                                                    </div>
+{{--                                                                    <div class="wpulike wpulike-heart ">--}}
+{{--                                                                        <div class="wp_ulike_general_class">--}}
+{{--                                                                            <a href="{{url('detail/}.$vd->id}?action=streamlab_core_process_simple_like&amp;post_id=2508&amp;nonce=d5a1e1d2c3&amp;is_comment=0&amp;disabled=true"--}}
+{{--                                                                               class="sl-button sl-button-2508"--}}
+{{--                                                                               data-nonce="d5a1e1d2c3"--}}
+{{--                                                                               data-post-id="2508" data-iscomment="0"--}}
+{{--                                                                               title="Like"><i class="far fa-heart"></i></a>--}}
+{{--                                                                        </div>--}}
+{{--                                                                    </div>--}}
+{{--                                                                    <ul class="menu bottomRight">--}}
+{{--                                                                        <li class="share top">--}}
+{{--                                                                            <i class="fa fa-share-alt"></i>--}}
+{{--                                                                            <ul class="submenu">--}}
+{{--                                                                                <li>--}}
+{{--                                                                                    <a href="www.facebookfc41.html?share=http://streamlab.gentechtree.com/tv-show/dream-of-dargons/"--}}
+{{--                                                                                       class="facebook"><i--}}
+{{--                                                                                            class="fab fa-facebook-f"></i></a>--}}
+{{--                                                                                </li>--}}
+{{--                                                                                <li>--}}
+{{--                                                                                    <a href="#http://streamlab.gentechtree.com/tv-show/dream-of-dargons/"--}}
+{{--                                                                                       class="facebook"><i--}}
+{{--                                                                                            class="fab fa-instagram"></i></a>--}}
+{{--                                                                                </li>--}}
+{{--                                                                                <li>--}}
+{{--                                                                                    <a href="#http://streamlab.gentechtree.com/tv-show/dream-of-dargons/"--}}
+{{--                                                                                       class="facebook"><i--}}
+{{--                                                                                            class="fab fa-twitter"></i></a>--}}
+{{--                                                                                </li>--}}
+{{--                                                                            </ul>--}}
+{{--                                                                        </li>--}}
+{{--                                                                    </ul>--}}
 
                                                                 </div>
                                                                 <div class="gen-movie-action">
-                                                                    <a href="../tv-show/ghost-of-sky/index.html"
+                                                                    <a href="{{url('detail/'.$vd->id)}}"
                                                                        class="gen-button">
                                                                         <i class="fa fa-play"></i>
                                                                     </a>
@@ -85,18 +74,20 @@
                                                             </div>
                                                             <div class="gen-info-contain">
                                                                 <div class="gen-movie-info">
-                                                                    <h3><a href="../tv-show/ghost-of-sky/index.html">Ghost
-                                                                            of Sky</a></h3>
+                                                                    <h3 style="font-weight: bold;margin-bottom: 2px;"><a href="{{url('detail/'.$vd->id)}}">{{$vd->title}}</a></h3>
+
+                                                                    <h3 style="font-size:19px;text-indent: 20px;"><a href="{{url('detail/'.$vd->id)}}">{{Str::limit($vd->description,40)}}</a></h3>
+
 
 
                                                                 </div>
-                                                                <div class="gen-movie-meta-holder">
+                                                                <div class="gen-movie-meta-holder float-right">
                                                                     <ul>
-                                                                        <li>1 Season</li>
+                                                                        <li>{{\Carbon\Carbon::createFromTimestamp($vd->uploaddatetime)->toDateString()}}</li>
 
 
                                                                         <li>
-                                                                            <a href="../tv-show-genre/adventure/index.html"><span>Adventure</span></a>
+                                                                            <a href="../tv-show-genre/drama/index.html"><span>{{$vd->type}}</span></a>
 
                                                                         </li>
                                                                     </ul>
@@ -108,6 +99,7 @@
                                                     </div>
 
                                                 </article><!-- #post-## -->
+
                                             </div>
                                             @endforeach
 
