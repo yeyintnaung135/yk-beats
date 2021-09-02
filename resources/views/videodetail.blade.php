@@ -2,10 +2,11 @@
 
 
 @section('content')
-    <div id="page" class="site">
+    <div id="app" class="site">
         <a class="skip-link screen-reader-text" href="#content"></a>
         @include('layouts.header')
 
+<video-component></video-component>
 
         <div class="gentechtreethemes-contain">
             <div class="site-content-contain">
@@ -30,14 +31,15 @@
                                                                         <source src="{{asset('storage/'.$video->file_link)}}"  type="video/mp4">
                                                                         Your browser does not support the video tag.
                                                                     </video>
-                                                                    <div id="vbplay" class="own-button-place" >
+                                                                    <button id="vbplay" class="own-button-place" style="display:block;" >
                                                                         <i  class="own-button-circle">
                                                                             <span class="fa fa-play"></span>
                                                                         </i>
 
-                                                                    </div>
+                                                                    </button>
 
                                                                 </div>
+
                                                             </div>
 
                                                             <div class="col-lg-6 align-self-center">
@@ -1732,4 +1734,5 @@
 
             </div><!-- .site-content-contain -->
         </div> <!-- Peaceful themes -->
+    </div>
 @endsection

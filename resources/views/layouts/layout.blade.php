@@ -43,14 +43,19 @@
         }
 
         .own-button-place {
+            display: block;
+            border: 0;
+            border-radius: 100%;
+            color: #fff;
+            display: none;
+            left: 50%;
+            opacity: .9;
+            padding: 15px;
             position: absolute;
             top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            z-index: 9;
-
+            transform: translate(-50%,-50%);
+            transition: .3s;
+            z-index: 2;
 
         }
 
@@ -327,6 +332,8 @@
 
     });
 </script>
+<script src="{{url('js/app.js')}}"></script>
+
 
 </body>
 
