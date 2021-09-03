@@ -264,12 +264,7 @@
 <script src="{{url('owl/dist/owl.carousel.js')}}"></script>
 
 <script>
-    $(document).ready(function () {
 
-        var vid = document.getElementById("video1a");
-
-    })
-    ;
     jQuery(function ($) {
 
 
