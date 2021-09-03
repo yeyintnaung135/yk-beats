@@ -265,47 +265,8 @@
 
 <script>
     $(document).ready(function () {
+
         var vid = document.getElementById("video1a");
-        vid.onplay = function () {
-            $('#vbplay span').removeClass('fa-play');
-            $('#vbplay span').addClass('fa-pause');
-
-
-            $('#vbplay').fadeOut();
-        };
-        vid.onpause = function () {
-            $('#vbplay span').removeClass('fa-pause');
-            $('#vbplay span').addClass('fa-play');
-            $('#vbplay').fadeIn();
-
-
-        };
-
-        if (document.getElementById('video1a').pause) {
-            $('#vbplay span').removeClass('fa-pause');
-            $('#vbplay span').addClass('fa-play');
-
-            $('#vbplay').fadeIn();
-
-        }
-        $('#vbplay').click(function () {
-            if (vid.paused) {
-                $('#vbplay span').removeClass('fa-pause');
-                $('#vbplay span').addClass('fa-play');
-                $('#vbplay').fadeIn();
-                vid.play();
-
-
-            } else {
-                $('#vbplay span').removeClass('fa-pause');
-                $('#vbplay span').addClass('fa-play');
-                $('#vbplay').fadeIn();
-                vid.pause();
-
-            }
-
-
-        });
 
     })
     ;

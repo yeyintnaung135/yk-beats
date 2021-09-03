@@ -6,7 +6,6 @@
         <a class="skip-link screen-reader-text" href="#content"></a>
         @include('layouts.header')
 
-<video-component></video-component>
 
         <div class="gentechtreethemes-contain">
             <div class="site-content-contain">
@@ -25,20 +24,21 @@
                                                     <div class="gen-tv-show-top">
                                                         <div class="row">
                                                             <div class="col-lg-6">
-                                                                <div class="gentech-tv-show-img-holder">
+{{--                                                                <div class="gentech-tv-show-img-holder">--}}
 
-                                                                    <video width="620" id="video1a" poster="{{asset('storage/'.$video->thumbnail)}}" controls autoplay controlsList="nodownload">
-                                                                        <source src="{{asset('storage/'.$video->file_link)}}"  type="video/mp4">
-                                                                        Your browser does not support the video tag.
-                                                                    </video>
-                                                                    <button id="vbplay" class="own-button-place" style="display:block;" >
-                                                                        <i  class="own-button-circle">
-                                                                            <span class="fa fa-play"></span>
-                                                                        </i>
+{{--                                                                    <video width="620" id="video1a" poster="{{asset('storage/'.$video->thumbnail)}}" controls autoplay controlsList="nodownload">--}}
+{{--                                                                        <source src="{{asset('storage/'.$video->file_link)}}"  type="video/mp4">--}}
+{{--                                                                        Your browser does not support the video tag.--}}
+{{--                                                                    </video>--}}
+{{--                                                                    <button id="vbplay" class="own-button-place" style="display:block;" >--}}
+{{--                                                                        <i  class="own-button-circle">--}}
+{{--                                                                            <span class="fa fa-play"></span>--}}
+{{--                                                                        </i>--}}
 
-                                                                    </button>
+{{--                                                                    </button>--}}
 
-                                                                </div>
+{{--                                                                </div>--}}
+                                                                <video-component data="{{ asset('storage/'.$video->file_link) }}" image="{{asset('storage/'.$video->thumbnail) }}"></video-component>
 
                                                             </div>
 
