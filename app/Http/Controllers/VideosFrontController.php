@@ -15,7 +15,8 @@ class VideosFrontController extends Controller
     }
     public function detail($id){
         $video=Videos::where('id',$id)->first();
-        return view('videodetail',['video'=>$video]);
+        $similar=Videos::Where([['id','!=',$video->id],['type','=',$video->type]])->get();
+        return view('videodetail',['video'=>$video,'sim_videos'=>$similar]);
 
 
     }

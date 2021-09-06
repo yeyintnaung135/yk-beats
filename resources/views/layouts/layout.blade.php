@@ -86,9 +86,10 @@
             height: 50px;
             text-align: center;
             line-height: 50px;
-            -webkit-border-radius: 00px;
-            -moz-border-radius: 00px;
-            border-radius: 00px;
+            border-radius: 900px;
+
+            -webkit-border-radius: 900px;
+            -moz-border-radius: 900px;
         }
     </style>
 
@@ -211,11 +212,6 @@
 @yield('content')
 
 
-
-
-
-
-
 <!-- === back-to-top === -->
 <div id="back-to-top">
     <a class="top" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
@@ -268,14 +264,30 @@
     jQuery(function ($) {
 
 
-        $("#owl-demo").owlCarousel({
-            items: 1,
+        $(".owl-carousel").owlCarousel({
+            items: 4,
             autoplay: true,
+            margin:10,
             autoplayHoverPause: true,
             dots: false,
             loop: true,
             nav: true,
-            navText: ["<i class='ion-ios-arrow-left owl-button'></i>", "<i class='ion-ios-arrow-right owl-button'></i>"]
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:4,
+                    nav:true,
+                    loop:false
+                }
+            },
+            navText: ["<span style='background:#3f9fff3b;width:22px;padding:12px;'><i class='ion-ios-arrow-left'></i></span>", "<span style='background:#3f9fff3b;width:22px;padding:12px;'><i class='ion-ios-arrow-right'></i></span>"]
 
 
             // "singleItem:true" is a shortcut for:

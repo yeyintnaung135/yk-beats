@@ -25,7 +25,7 @@
                                                     class="post-2508 tv_show type-tv_show status-publish has-post-thumbnail hentry tv_show_genre-drama tv_show_genre-fantasy tv_show_tag-brother tv_show_tag-brother-relationship tv_show_tag-kings tv_show_tag-vikings">
                                                     <div class="gen-carousel-movies-style-3 movie-grid style-3">
                                                         <div class="gen-movie-contain">
-                                                            <div class="gen-movie-img">
+                                                            <div class="gen-movie-img" onclick="window.location.assign('{{url('detail/'.$vd->id)}}')">
                                                                 <img src="{{asset('storage/'.$vd->thumbnail)}}">
 
                                                                 <div class="gen-movie-add">
@@ -83,11 +83,11 @@
                                                                 </div>
                                                                 <div class="gen-movie-meta-holder float-right">
                                                                     <ul>
-                                                                        <li>{{\Carbon\Carbon::createFromTimestamp($vd->uploaddatetime)->toDateString()}}</li>
+                                                                        <li>{{\Carbon\Carbon::createFromDate($vd->uploaddatetime)->toDateString()}}</li>
 
 
                                                                         <li>
-                                                                            <a href="../tv-show-genre/drama/index.html"><span>{{$vd->type}}</span></a>
+                                                                            <span>{{$vd->type}}</span>
 
                                                                         </li>
                                                                     </ul>
