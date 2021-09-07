@@ -27,6 +27,7 @@ Vue.use(VuePlyr, {
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('video-component', require('./components/VideoComponent.vue').default);
+Vue.component('ytvideo-component', require('./components/YtvideoComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

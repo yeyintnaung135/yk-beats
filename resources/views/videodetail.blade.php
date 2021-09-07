@@ -24,11 +24,13 @@
                                                     <div class="gen-tv-show-top">
                                                         <div class="row">
                                                             <div class="col-lg-6">
-
+                                                                @if($video->file_link != '')
                                                                 <video-component
                                                                     data="{{ asset('storage/'.$video->file_link) }}"
                                                                     image="{{asset('storage/'.$video->thumbnail) }}"></video-component>
-
+                                                                @else
+                                                                    <iframe width="560" id="ykyt" height="315" src="{{$video->youtubelink.'?autoplay=1'}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                                @endif
                                                             </div>
 
                                                             <div class="col-lg-6 align-self-center">

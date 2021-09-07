@@ -12,6 +12,8 @@
 */
 Route::get('/', 'VideosFrontController@index');
 Route::get('/detail/{id}', 'VideosFrontController@detail');
+Route::get('/bytype/{type}', 'VideosFrontController@bytype');
+Route::get('/freebeats', 'VideosFrontController@freebeats');
 
 
 Route::get('/admin', function () {
