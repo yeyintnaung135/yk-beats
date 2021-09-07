@@ -30,56 +30,13 @@
 
                                         </ul>
                                     </li>
-                                    <li id="menu-item-5551"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children dropdown menu-item-5551">
-                                        <a href="{{url('/freebeats')}}">Free Beats</a><i class="fa gen-submenu-icon"></i>
+                                    <li id="menu-item-5993"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children dropdown menu-item-5993">
+                                        <a href="{{url('/freebeats')}}">Free Beats</a>
                                     </li>
-                                    <li id="menu-item-5555"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-5555">
-                                        <a href="#">Video</a><i class="fa fa-chevron-down gen-submenu-icon"></i>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-5554"
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5554">
-                                                <a href="../videos/index.html">Video</a><i
-                                                    class="fa fa-chevron-down gen-submenu-icon"></i>
-                                                <ul class="sub-menu">
-                                                    <li id="menu-item-7252"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7252">
-                                                        <a href="../videos/indexf0e6.html?load_type=loadmore">Load
-                                                            More</a></li>
-                                                    <li id="menu-item-7253"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7253">
-                                                        <a href="../videos/index2038.html?load_type=infscroll">Infinite
-                                                            scroll</a></li>
-                                                    <li id="menu-item-7254"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7254">
-                                                        <a href="../videos/index.html">Pagination</a></li>
-                                                </ul>
-                                            </li>
-                                            <li id="menu-item-7447"
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7447">
-                                                <a href="#">Videos Style</a><i
-                                                    class="fa fa-chevron-down gen-submenu-icon"></i>
-                                                <ul class="sub-menu">
-                                                    <li id="menu-item-7448"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7448">
-                                                        <a href="../videos/indexec69.html?box-style=1">Style 1</a>
-                                                    </li>
-                                                    <li id="menu-item-7452"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7452">
-                                                        <a href="../videos/indexb979.html?box-style=2">Style 2</a>
-                                                    </li>
-                                                    <li id="menu-item-7457"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7457">
-                                                        <a href="../videos/index6c13.html?box-style=3">Style 3</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li id="menu-item-5573"
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5573">
-                                                <a href="../video/anderson-fights-his-way-to-glory/index.html">Single
-                                                    videos</a></li>
-                                        </ul>
+                                    <li id="menu-item-5993"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children dropdown menu-item-5993">
+                                        <a href="{{url('/contact')}}">Contact Info</a>
                                     </li>
                                     <li id="menu-item-7578"
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-7578">

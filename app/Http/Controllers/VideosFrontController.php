@@ -18,7 +18,14 @@ class VideosFrontController extends Controller
     public function detail($id)
     {
         $video = Videos::where('id', $id)->first();
-        $similar = Videos::Where([['id', '!=', $video->id], ['type', '=', $video->type]])->get();
+        if($video->sorforn != 'free'){
+            $similar = Videos::Where([['id', '!=', $video->id], ['type', '=', $video->type]])->get();
+
+        }else{
+            $similar = Videos::Where([['id', '!=', $video->id], ['sorforn', '=', 'free']])->get();
+
+        }
+
         $types = Videos::query()->select('type')->distinct()->get();
 
         return view('videodetail', ['video' => $video, 'sim_videos' => $similar,'types' => $types]);
@@ -28,7 +35,14 @@ class VideosFrontController extends Controller
 
     public function bytype($type)
     {
-        $videos = Videos::Where('type',$type)->get();
+        if($type != 'free'){
+            $videos = Videos::Where('type',$type)->get();
+
+        }else{
+            $videos = Videos::Where('sorforn',$type)->get();
+
+        }
+
         $types = Videos::query()->select('type')->distinct()->get();
 
         return view('videoslist', ['videos' => $videos,'types' => $types]);
@@ -40,8 +54,14 @@ class VideosFrontController extends Controller
         $videos = Videos::Where('sorforn','free')->get();
         $types = Videos::query()->select('type')->distinct()->get();
 
+
         return view('videoslist', ['videos' => $videos,'types' => $types]);
 
 
+    }
+    public function contact(){
+        $types = Videos::query()->select('type')->distinct()->get();
+
+        return view('contact',['types' => $types]);
     }
 }

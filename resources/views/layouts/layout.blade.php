@@ -131,6 +131,24 @@
           href="{{url('wp-content/themes/streamlab/assets/css/ionicons.min001e.css?ver=2.0.0')}}" media='all'/>
     <link rel='stylesheet' id='line-awesome-css'
           href="{{url('wp-content/themes/streamlab/assets/css/line-awesome.min6f3e.css?ver=1.3.0')}}" media='all'/>
+    <link rel='stylesheet' id='elementor-icons-css'
+          href='{{url('wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min21f9.css?ver=5.11.0')}}
+          media='all'/>
+    <link rel='stylesheet' id='elementor-animations-css'
+          href='{{url('wp-content/plugins/elementor/assets/lib/animations/animations.minaeb9.css?ver=3.1.4')}} media='all'/>
+    <link rel='stylesheet' id='elementor-frontend-legacy-css'
+          href='{{url('wp-content/plugins/elementor/assets/css/frontend-legacy.minaeb9.css?ver=3.1.4')}} media='all'/>
+    <link rel='stylesheet' id='elementor-frontend-css'
+          href='{{url('wp-content/plugins/elementor/assets/css/frontend.minaeb9.css?ver=3.1.4')}} media='all'/>
+    <link rel='stylesheet' id='elementor-post-5548-css'
+          href='../wp-content/uploads/elementor/css/post-55483d61.css?ver=1616016077')}} media='all'/>
+    <link rel='stylesheet' id='font-awesome-5-all-css'
+          href='{{url('wp-content/plugins/elementor/assets/lib/font-awesome/css/all.minaeb9.css?ver=3.1.4')}} media='all'/>
+    <link rel='stylesheet' id='font-awesome-4-shim-css'
+          href='{{url('wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.minaeb9.css?ver=3.1.4')}}
+          media='all'/>
+    <link rel='stylesheet' id='elementor-post-6424-css'
+          href='../wp-content/uploads/elementor/css/post-64245283.css?ver=1616036953' media='all'/>
     <link rel='stylesheet' id='bootstrap-css'
           href="{{url('wp-content/themes/streamlab/assets/css/bootstrap.mina352.css?ver=4.1.3')}}" media='all'/>
     <link rel='stylesheet' id='owl-carousel-css'
@@ -167,12 +185,8 @@
 
     <script src="{{url('wp-content/plugins/streamlab-core/public/js/streamlab-core8a54.js?ver=1.0.0')}}"
             id='streamlab-core-js'></script>
-    <link rel="https://api.w.org/" href="../wp-json/index.html"/>
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd"/>
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml"/>
-    <meta name="generator" content="WordPress 5.7.2"/>
-    <meta name="framework" content="Redux 4.1.24"/>
-    <meta name="cdp-version" content="1.1.2"/>
+
+
     <style id="architeck-custom-style-3944a">
         .g_b {
             background-image: url({{url('wp-content/uploads/2019/02/23-1.jpg')}})

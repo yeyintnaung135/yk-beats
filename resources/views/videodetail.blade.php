@@ -25,11 +25,15 @@
                                                         <div class="row">
                                                             <div class="col-lg-6">
                                                                 @if($video->file_link != '')
-                                                                <video-component
-                                                                    data="{{ asset('storage/'.$video->file_link) }}"
-                                                                    image="{{asset('storage/'.$video->thumbnail) }}"></video-component>
+                                                                    <video-component
+                                                                        data="{{ asset('storage/'.$video->file_link) }}"
+                                                                        image="{{asset('storage/'.$video->thumbnail) }}"></video-component>
                                                                 @else
-                                                                    <iframe width="560" id="ykyt" height="315" src="{{$video->youtubelink.'?autoplay=1'}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                                    <iframe width="560" id="ykyt" height="315"
+                                                                            src="{{$video->youtubelink.'?autoplay=1'}}"
+                                                                            title="YouTube video player" frameborder="0"
+                                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                            allowfullscreen></iframe>
                                                                 @endif
                                                             </div>
 
@@ -63,29 +67,30 @@
                                                                         </ul>
                                                                     </div>
                                                                     <div class="gen-excerpt" style="height: 254px;">
-                                                                        <h6 style="font-size:17px;text-indent:  22px">{{$video->description}}</h6></div>
+                                                                        <h6 style="font-size:17px;text-indent:  22px">{{$video->description}}</h6>
+                                                                    </div>
 
-{{--                                                                    <div class="gen-socail-share">--}}
-{{--                                                                        <h4 class="align-self-center">Social Share--}}
-{{--                                                                            :</h4>--}}
-{{--                                                                        <ul class="social-inner">--}}
-{{--                                                                            <li><a target="_blank"--}}
-{{--                                                                                   href="www.facebookd274.html?share=http://streamlab.gentechtree.com/tv-show/love-in-21st/"--}}
-{{--                                                                                   class="facebook"><i--}}
-{{--                                                                                        class="fab fa-facebook-f"></i></a>--}}
-{{--                                                                            </li>--}}
-{{--                                                                            <li><a target="_blank"--}}
-{{--                                                                                   href="#http://streamlab.gentechtree.com/tv-show/love-in-21st/"--}}
-{{--                                                                                   class="facebook"><i--}}
-{{--                                                                                        class="fab fa-instagram"></i></a>--}}
-{{--                                                                            </li>--}}
-{{--                                                                            <li><a target="_blank"--}}
-{{--                                                                                   href="#http://streamlab.gentechtree.com/tv-show/love-in-21st/"--}}
-{{--                                                                                   class="facebook"><i--}}
-{{--                                                                                        class="fab fa-twitter"></i></a>--}}
-{{--                                                                            </li>--}}
-{{--                                                                        </ul>--}}
-{{--                                                                    </div>--}}
+                                                                    {{--                                                                    <div class="gen-socail-share">--}}
+                                                                    {{--                                                                        <h4 class="align-self-center">Social Share--}}
+                                                                    {{--                                                                            :</h4>--}}
+                                                                    {{--                                                                        <ul class="social-inner">--}}
+                                                                    {{--                                                                            <li><a target="_blank"--}}
+                                                                    {{--                                                                                   href="www.facebookd274.html?share=http://streamlab.gentechtree.com/tv-show/love-in-21st/"--}}
+                                                                    {{--                                                                                   class="facebook"><i--}}
+                                                                    {{--                                                                                        class="fab fa-facebook-f"></i></a>--}}
+                                                                    {{--                                                                            </li>--}}
+                                                                    {{--                                                                            <li><a target="_blank"--}}
+                                                                    {{--                                                                                   href="#http://streamlab.gentechtree.com/tv-show/love-in-21st/"--}}
+                                                                    {{--                                                                                   class="facebook"><i--}}
+                                                                    {{--                                                                                        class="fab fa-instagram"></i></a>--}}
+                                                                    {{--                                                                            </li>--}}
+                                                                    {{--                                                                            <li><a target="_blank"--}}
+                                                                    {{--                                                                                   href="#http://streamlab.gentechtree.com/tv-show/love-in-21st/"--}}
+                                                                    {{--                                                                                   class="facebook"><i--}}
+                                                                    {{--                                                                                        class="fab fa-twitter"></i></a>--}}
+                                                                    {{--                                                                            </li>--}}
+                                                                    {{--                                                                        </ul>--}}
+                                                                    {{--                                                                    </div>--}}
 
                                                                 </div>
                                                             </div>
@@ -96,16 +101,20 @@
                                                         <div class="col-lg-12">
                                                             <div class="pm-inner">
                                                                 <div class="gen-more-like">
-                                                                    <h5 class="gen-more-title">Similar Beats</h5>
+                                                                    @if($video->sorforn !='free')
+                                                                        <h5 class="gen-more-title">Similar Beats</h5>
+
+                                                                    @else
+                                                                        <h5 class="gen-more-title">Free Beats</h5>
+
+                                                                    @endif
+
 
                                                                 </div>
 
                                                             </div>
                                                         </div>
                                                     </div>
-
-
-
 
 
                                                 </div>
@@ -121,7 +130,8 @@
 
                                                         <div class="item">
                                                             <div class="gen-episode-contain">
-                                                                <div class="gen-episode-img" onclick="window.location.assign('{{url('detail/'.$sv->id)}}')">
+                                                                <div class="gen-episode-img"
+                                                                     onclick="window.location.assign('{{url('detail/'.$sv->id)}}')">
                                                                     <img
                                                                         src="{{asset('storage/'.$sv->thumbnail)}} ">
 
@@ -146,7 +156,7 @@
                                                                         <ul>
 
                                                                             <li class="release-date">
-                                                                                {{\Carbon\Carbon::createFromDate($sv->uploaddatetime)->toDateString()}}                                                                                    </li>
+                                                                                {{$sv->type}}                                                                                    </li>
 
                                                                         </ul>
                                                                     </div>
@@ -157,15 +167,19 @@
                                                     @endforeach
 
 
-
                                                 </div>
                                             </div>
 
                                         </div>
                                     </div>
                                     <div class="row float-right">
-                                        <button class="btn btn-lg btn-primary ">See All &nbsp;&nbsp; <i class="ion-ios-arrow-right"></i></button>
-
+                                        @if($video->sorforn !='free')
+                                            <a href="{{url('bytype/'.$video->type)}}" class="btn btn-lg btn-primary ">See
+                                                All &nbsp;&nbsp; <i class="ion-ios-arrow-right"></i></a>
+                                        @else
+                                            <a href="{{url('bytype/'.'free')}}" class="btn btn-lg btn-primary ">See All
+                                                &nbsp;&nbsp; <i class="ion-ios-arrow-right"></i></a>
+                                        @endif
                                     </div>
                                 </div>
                             </main>
@@ -175,145 +189,7 @@
                 <!-- Footer start -->
 
 
-                <footer id="gen-footer">
-                    <div class="gen-footer-style-1">
-                        <div class="gen-footer-top">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xl-3 col-md-6">
-                                        <div class="widget">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <img src="../../wp-content/uploads/2021/02/logo-1.png"
-                                                         class="gen-footer-logo" alt="gen-footer-logo">
-                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                        industry.</p>
-
-                                                    <ul class="social-link">
-                                                        <li><a href="#" class="facebook"><i
-                                                                    class="fab fa-facebook-f"></i></a></li>
-                                                        <li><a href="#" class="facebook"><i
-                                                                    class="fab fa-instagram"></i></a></li>
-                                                        <li><a href="#" class="facebook"><i
-                                                                    class="fab fa-skype"></i></a>
-                                                        </li>
-                                                        <li><a href="#" class="facebook"><i class="fab fa-twitter"></i></a>
-                                                        </li>
-                                                    </ul>
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-xl-3  col-md-6">
-                                        <div class="widget"><h4 class="footer-title">Explore</h4>
-                                            <div class="menu-explore-container">
-                                                <ul id="menu-explore" class="menu">
-                                                    <li id="menu-item-6714"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-6714">
-                                                        <a href="../../index.html">Home</a></li>
-                                                    <li id="menu-item-6190"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6190">
-                                                        <a href="../../movies/index.html">Movies</a></li>
-                                                    <li id="menu-item-6191"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6191">
-                                                        <a href="../../tv-shows/index.html">Tv Shows</a></li>
-                                                    <li id="menu-item-6192"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6192">
-                                                        <a href="../../videos/index.html">Videos</a></li>
-                                                    <li id="menu-item-7239"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7239">
-                                                        <a href="#">Actors</a></li>
-                                                    <li id="menu-item-7240"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7240">
-                                                        <a href="#">Basketball</a></li>
-                                                    <li id="menu-item-7241"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7241">
-                                                        <a href="#">Celebrity</a></li>
-                                                    <li id="menu-item-7242"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7242">
-                                                        <a href="#">Cross</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3  col-md-6">
-                                        <div class="widget"><h4 class="footer-title">Company</h4>
-                                            <div class="menu-about-container">
-                                                <ul id="menu-about" class="menu">
-                                                    <li id="menu-item-6202"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6202">
-                                                        <a href="../../contact-us/index.html">Company</a></li>
-                                                    <li id="menu-item-6203"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6203">
-                                                        <a href="../../contact-us/index.html">Privacy Policy</a></li>
-                                                    <li id="menu-item-6204"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6204">
-                                                        <a href="../../contact-us/index.html">Terms Of Use</a></li>
-                                                    <li id="menu-item-6206"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6206">
-                                                        <a href="../../contact-us/index.html">Help Center</a></li>
-                                                    <li id="menu-item-6725"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6725">
-                                                        <a href="../../contact-us/index.html">contact us</a></li>
-                                                    <li id="menu-item-6726"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6726">
-                                                        <a href="../../pricing-table/index.html">Subscribe</a></li>
-                                                    <li id="menu-item-6727"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6727">
-                                                        <a href="#">Our Team</a></li>
-                                                    <li id="menu-item-6729"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6729">
-                                                        <a href="../../contact-us/index.html">Faq</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3  col-md-6">
-                                        <div class="widget">
-                                            <h4 class="footer-title">Downlaod App</h4>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                        industry.</p>
-                                                    <a href="https://www.apple.com/in/app-store/">
-
-                                                        <img src="../../wp-content/uploads/2021/01/2.png"
-                                                             class="gen-playstore-logo" alt="playstore">
-                                                    </a>
-                                                    <a href="https://www.apple.com/in/app-store/">
-                                                        <img src="../../wp-content/uploads/2021/01/1.png"
-                                                             class="gen-appstore-logo" alt="appstore">
-                                                    </a>
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gen-copyright-footer">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12 align-self-center">
-                                        <span class="gen-copyright"><a target="_blank" href="#"> Copyright 2021 stremlab All Rights Reserved.</a></span>
-
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </footer>
+            @include('layouts.footer')
                 <!-- Footer stop-->
 
             </div><!-- .site-content-contain -->
