@@ -102,24 +102,8 @@
 
                                             </div>
                                             @endforeach
-
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-12 col-md-12">
-                                                <div class="gen-pagination">
-                                                    <nav aria-label="Page navigation">
-                                                        <ul class='page-numbers'>
-                                                            <li><span aria-current="page"
-                                                                      class="page-numbers current">1</span></li>
-                                                            <li><a class="page-numbers"
-                                                                   href="index6146.html?paged=2">2</a></li>
-                                                            <li><a class="next page-numbers"
-                                                                   href="index6146.html?paged=2">Next page</a></li>
-                                                        </ul>
-                                                    </nav>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        {{ $videos->links('vendor.pagination.custom') }}
                                     </div>
 
                                 </div>

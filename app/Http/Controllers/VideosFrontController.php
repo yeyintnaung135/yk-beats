@@ -10,7 +10,7 @@ class VideosFrontController extends Controller
     //
     public function index()
     {
-        $videos = Videos::OrderBy('uploaddatetime', 'desc')->get();
+        $videos = Videos::OrderBy('uploaddatetime', 'desc')->paginate(12);
         $types = Videos::query()->select('type')->distinct()->get();
         return view('welcome', ['videos' => $videos, 'types' => $types]);
     }
@@ -36,10 +36,10 @@ class VideosFrontController extends Controller
     public function bytype($type)
     {
         if($type != 'free'){
-            $videos = Videos::Where('type',$type)->get();
+            $videos = Videos::Where('type',$type)->paginate(12);
 
         }else{
-            $videos = Videos::Where('sorforn',$type)->get();
+            $videos = Videos::Where('sorforn',$type)->paginate(12);
 
         }
 
@@ -51,7 +51,7 @@ class VideosFrontController extends Controller
     }
     public function freebeats()
     {
-        $videos = Videos::Where('sorforn','free')->get();
+        $videos = Videos::Where('sorforn','free')->paginate(12);
         $types = Videos::query()->select('type')->distinct()->get();
 
 

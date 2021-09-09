@@ -7,7 +7,8 @@
                         <div class="widget">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <img src="{{url('wp-content/uploads/2021/02/logo-1.png')}}"
+
+                                    <img src="{{url('photos/logo.png')}}"
                                          class="gen-footer-logo" alt="gen-footer-logo">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry.</p>
@@ -98,17 +99,16 @@
                             <h4 class="footer-title">Downlaod App</h4>
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry.</p>
-                                    <a href="https://www.apple.com/in/app-store/">
+                                    <h6>Comming Soon</h6>
+{{--                                    <a href="https://www.apple.com/in/app-store/">--}}
 
-                                        <img src="{{url('wp-content/uploads/2021/01/2.png')}}"
-                                             class="gen-playstore-logo" alt="playstore">
-                                    </a>
-                                    <a href="https://www.apple.com/in/app-store/">
-                                        <img src="{{url('wp-content/uploads/2021/01/1.png')}}"
-                                             class="gen-appstore-logo" alt="appstore">
-                                    </a>
+{{--                                        <img src="{{url('wp-content/uploads/2021/01/2.png')}}"--}}
+{{--                                             class="gen-playstore-logo" alt="playstore">--}}
+{{--                                    </a>--}}
+{{--                                    <a href="https://www.apple.com/in/app-store/">--}}
+{{--                                        <img src="{{url('wp-content/uploads/2021/01/1.png')}}"--}}
+{{--                                             class="gen-appstore-logo" alt="appstore">--}}
+{{--                                    </a>--}}
 
 
                                 </div>
