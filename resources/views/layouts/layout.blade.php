@@ -76,6 +76,9 @@
             font-family: var(--title-fonts);
             font-size: 16px;
         }
+        .blue{
+            color:#3f9fff !important;
+        }
 
         .owl-button {
             color: #fffcfc;

@@ -96,7 +96,7 @@
                     </div>
                     <div class="col-xl-3  col-md-6">
                         <div class="widget">
-                            <h4 class="footer-title">Downlaod App</h4>
+                            <h4 class="footer-title">Download App</h4>
                             <div class="row">
                                 <div class="col-sm-12">
                                     <h6>Comming Soon</h6>
