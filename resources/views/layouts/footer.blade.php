@@ -30,66 +30,20 @@
                         </div>
 
                     </div>
-                    <div class="col-xl-3  col-md-6">
-                        <div class="widget"><h4 class="footer-title">Explore</h4>
-                            <div class="menu-explore-container">
-                                <ul id="menu-explore" class="menu">
-                                    <li id="menu-item-6714"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-6714">
-                                        <a href="../index.html">Home</a></li>
-                                    <li id="menu-item-6190"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6190">
-                                        <a href="../movies/index.html">Movies</a></li>
-                                    <li id="menu-item-6191"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-6191">
-                                        <a href="index.html" aria-current="page">Tv Shows</a></li>
-                                    <li id="menu-item-6192"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6192">
-                                        <a href="../videos/index.html">Videos</a></li>
-                                    <li id="menu-item-7239"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7239">
-                                        <a href="#">Actors</a></li>
-                                    <li id="menu-item-7240"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7240">
-                                        <a href="#">Basketball</a></li>
-                                    <li id="menu-item-7241"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7241">
-                                        <a href="#">Celebrity</a></li>
-                                    <li id="menu-item-7242"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7242">
-                                        <a href="#">Cross</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3  col-md-6">
-                        <div class="widget"><h4 class="footer-title">Company</h4>
+                    <div class="col-xl-6  col-md-6">
+                        <div class="widget"><h4 class="footer-title">Contact Info</h4>
                             <div class="menu-about-container">
                                 <ul id="menu-about" class="menu">
                                     <li id="menu-item-6202"
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6202">
-                                        <a href="../contact-us/index.html">Company</a></li>
+                                        Phone - <br><a>09783602797</a></li>
                                     <li id="menu-item-6203"
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6203">
-                                        <a href="../contact-us/index.html">Privacy Policy</a></li>
+                                       Facebook-<a href="https://www.facebook.com/yeyintnaungyk">https://www.facebook.com/yeyintnaungyk</a></li>
                                     <li id="menu-item-6204"
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6204">
-                                        <a href="../contact-us/index.html">Terms Of Use</a></li>
-                                    <li id="menu-item-6206"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6206">
-                                        <a href="../contact-us/index.html">Help Center</a></li>
-                                    <li id="menu-item-6725"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6725">
-                                        <a href="../contact-us/index.html">contact us</a></li>
-                                    <li id="menu-item-6726"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6726">
-                                        <a href="../pricing-table/index.html">Subscribe</a></li>
-                                    <li id="menu-item-6727"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6727">
-                                        <a href="#">Our Team</a></li>
-                                    <li id="menu-item-6729"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6729">
-                                        <a href="../contact-us/index.html">Faq</a></li>
+                                       Youtube <a href="https://www.youtube.com/channel/UCoW_uxPnP6V9h3ydHKc0kvw">https://www.youtube.com/channel/UCoW_uxPnP6V9h3ydHKc0kvw</a></li>
+
                                 </ul>
                             </div>
                         </div>

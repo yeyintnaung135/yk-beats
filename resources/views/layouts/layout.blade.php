@@ -79,6 +79,26 @@
         .blue{
             color:#3f9fff !important;
         }
+        .own-brad {
+            background-image: url('{{url('photos/bac.jpg')}}') !important;background: var(--black-color);
+            color: var(--white-color);
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            background-attachment: fixed !important;
+            background-size: cover !important;
+        }
+        .own-brad::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1e283e;
+            opacity: 0.6;
+        }
+
 
         .owl-button {
             color: #fffcfc;

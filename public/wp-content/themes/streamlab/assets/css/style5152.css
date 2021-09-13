@@ -57,7 +57,7 @@ Moz Selectio
 /*================================================
 General
 ================================================*/
-body { background: var(--dark-color); font-family: var(--body-fonts); font-size: 1rem; font-style: normal; font-weight: normal; line-height: 2; color: var(--secondary-color); overflow-x: hidden; }
+body { background: #1e283e; font-family: var(--body-fonts); font-size: 1rem; font-style: normal; font-weight: normal; line-height: 2; color: var(--secondary-color); overflow-x: hidden; }
 h1, h2, h3, h4, h5, h6 { font-family: var(--title-fonts); color: var(--white-color); font-style: normal; text-transform: capitalize; font-weight: 600; margin: 0; letter-spacing: 0.02em; -ms-word-wrap: break-word; word-wrap: break-word; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
 h1 { font-size: 40px; font-style: normal; line-height: 48px; }
@@ -120,7 +120,7 @@ Back to Top
 #back-to-top .top:hover { background: var(--primarydark-color); color: var(--white-color); border: 1px solid var(--primarydark-color); }
 
 .own-div{
-    padding-top:122px;
+    padding-top:91px;
 }
 /*================================================
 WordPress Core

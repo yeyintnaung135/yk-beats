@@ -6,8 +6,8 @@
         <a class="skip-link screen-reader-text" href="#content"></a>
 
 
-
         @include('layouts.header')
+        @include('layouts.breadcrum')
         <div class="gentechtreethemes-contain">
             <div class="site-content-contain">
                 <div id="content" class="site-content">
@@ -17,6 +17,53 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-lg-12">
+                                            <br>
+                                            <div class="elementor-row">
+                                                <div
+                                                    class="elementor-column elementor-col-66 elementor-inner-column elementor-element elementor-element-4517e0c"
+                                                    data-id="4517e0c" data-element_type="column">
+                                                    <div class="elementor-column-wrap elementor-element-populated">
+                                                        <div class="elementor-widget-wrap">
+                                                            <div
+                                                                class="elementor-element elementor-element-db7ec61 elementor-widget elementor-widget-heading"
+                                                                data-id="db7ec61" data-element_type="widget"
+                                                                data-widget_type="heading.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <h4 class="elementor-heading-title elementor-size-default">
+                                                                        @if(str_contains(url()->current(),'freebeats'))
+                                                                            All Free Beats
+                                                                        @else
+                                                                            {{urldecode(Str::after(url()->current(),'bytype/'))}} Type Beats
+                                                                        @endif
+
+                                                                    </h4></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-31ca221 elementor-hidden-phone"
+                                                    data-id="31ca221" data-element_type="column">
+                                                    <div class="elementor-column-wrap elementor-element-populated">
+                                                        <div class="elementor-widget-wrap">
+                                                            <div
+                                                                class="elementor-element elementor-element-9703f0f elementor-widget elementor-widget-Button"
+                                                                data-id="9703f0f" data-element_type="widget"
+                                                                data-widget_type="Button.default">
+                                                                <div class="elementor-widget-container">
+
+
+                                                                    <div class="gen-btn-container">
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
                                             <div class="row">
                                                 @foreach($videos as $vd)
                                                     <div class="col-xl-3 col-lg-4 col-md-6">
@@ -24,7 +71,8 @@
                                                             class="post-2508 tv_show type-tv_show status-publish has-post-thumbnail hentry tv_show_genre-drama tv_show_genre-fantasy tv_show_tag-brother tv_show_tag-brother-relationship tv_show_tag-kings tv_show_tag-vikings">
                                                             <div class="gen-carousel-movies-style-3 movie-grid style-3">
                                                                 <div class="gen-movie-contain">
-                                                                    <div class="gen-movie-img" onclick="window.location.assign('{{url('detail/'.$vd->id)}}')">
+                                                                    <div class="gen-movie-img"
+                                                                         onclick="window.location.assign('{{url('detail/'.$vd->id)}}')">
                                                                         <img src="{{asset('storage/'.$vd->thumbnail)}}">
 
                                                                         <div class="gen-movie-add">
@@ -73,10 +121,13 @@
                                                                     </div>
                                                                     <div class="gen-info-contain">
                                                                         <div class="gen-movie-info">
-                                                                            <h3 style="font-weight: bold;margin-bottom: 2px;"><a href="{{url('detail/'.$vd->id)}}">{{$vd->title}}</a></h3>
+                                                                            <h3 style="font-weight: bold;margin-bottom: 2px;">
+                                                                                <a href="{{url('detail/'.$vd->id)}}">{{$vd->title}}</a>
+                                                                            </h3>
 
-                                                                            <h3 style="font-size:19px;text-indent: 20px;"><a href="{{url('detail/'.$vd->id)}}">{{Str::limit($vd->description,40)}}</a></h3>
-
+                                                                            <h3 style="font-size:19px;text-indent: 20px;">
+                                                                                <a href="{{url('detail/'.$vd->id)}}">{{Str::limit($vd->description,40)}}</a>
+                                                                            </h3>
 
 
                                                                         </div>
@@ -115,8 +166,8 @@
                 <!-- Footer start -->
 
 
-@include('layouts.footer')
-                <!-- Footer stop-->
+            @include('layouts.footer')
+            <!-- Footer stop-->
 
             </div><!-- .site-content-contain -->
         </div> <!-- Peaceful themes -->

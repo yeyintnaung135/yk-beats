@@ -137,22 +137,22 @@
 
 
                         <div class="gen-header-info-box">
-                            <div class="gen-menu-search-block">
-                                <a href="javascript:void(0)" id="gen-seacrh-btn"><i class="fa fa-search"></i></a>
-                                <div class="gen-search-form">
+{{--                            <div class="gen-menu-search-block">--}}
+{{--                                <a href="javascript:void(0)" id="gen-seacrh-btn"><i class="fa fa-search"></i></a>--}}
+{{--                                <div class="gen-search-form">--}}
 
-                                    <form role="search" method="get" class="search-form"
-                                          action="http://streamlab.gentechtree.com/">
-                                        <label>
-                                            <span class="screen-reader-text">Search for:</span>
-                                            <input type="search" class="search-field" placeholder="Search .."
-                                                   value="" name="s">
-                                        </label>
-                                        <button type="submit" class="search-submit"><span
-                                                class="screen-reader-text">Search</span></button>
-                                    </form>
-                                </div>
-                            </div>
+{{--                                    <form role="search" method="get" class="search-form"--}}
+{{--                                          action="http://streamlab.gentechtree.com/">--}}
+{{--                                        <label>--}}
+{{--                                            <span class="screen-reader-text">Search for:</span>--}}
+{{--                                            <input type="search" class="search-field" placeholder="Search .."--}}
+{{--                                                   value="" name="s">--}}
+{{--                                        </label>--}}
+{{--                                        <button type="submit" class="search-submit"><span--}}
+{{--                                                class="screen-reader-text">Search</span></button>--}}
+{{--                                    </form>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
                             <div class="gen-account-holder">
                                 <a href="javascript:void(0)" id="gen-user-btn"><i class="fa fa-user"></i></a>
                                 <div class="gen-account-menu">
@@ -177,7 +177,7 @@
                             </div>
                             <div class="gen-btn-container">
 
-                                <a href="../register/index.html" class="gen-button">
+                                <a href="https://www.youtube.com/channel/UCoW_uxPnP6V9h3ydHKc0kvw" class="gen-button">
                                     <div class="gen-button-block">
                                         <span class="gen-button-line-left"></span>
                                         <span class="gen-button-text">Subscribe</span>

@@ -14,10 +14,40 @@
             <div id="content" class="site-content">
                 <div class="gentechtreethemes-contain-area">
                     <div id="primary" class="content-area">
+
                         <main id="main" class="site-main">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12">
+                                        <div class="elementor-row">
+                                            <div class="elementor-column elementor-col-66 elementor-inner-column elementor-element elementor-element-4517e0c" data-id="4517e0c" data-element_type="column">
+                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                    <div class="elementor-widget-wrap">
+                                                        <div class="elementor-element elementor-element-db7ec61 elementor-widget elementor-widget-heading" data-id="db7ec61" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <h4 class="elementor-heading-title elementor-size-default">All Beats</h4>		</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-31ca221 elementor-hidden-phone" data-id="31ca221" data-element_type="column">
+                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                    <div class="elementor-widget-wrap">
+                                                        <div class="elementor-element elementor-element-9703f0f elementor-widget elementor-widget-Button" data-id="9703f0f" data-element_type="widget" data-widget_type="Button.default">
+                                                            <div class="elementor-widget-container">
+
+
+                                                                <div class="gen-btn-container">
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
                                         <div class="row">
                                             @foreach($videos as $vd)
                                             <div class="col-xl-3 col-lg-4 col-md-6">
