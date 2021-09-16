@@ -21,6 +21,23 @@ class VideosController extends Controller
     {
         return view('admin.videos.create');
     }
+    public function list()
+    {
+        $videos=Videos::Orderby('id','desc')->get();
+        return view('admin.videos.list',['videos'=>$videos]);
+    }
+    public function delete(Request $request)
+    {
+        $videos=Videos::where('id',$request->id);
+        if(Storage::disk('public')->exists('videos',$videos->first()->file_link)){
+            Storage::disk('public')->delete('videos',$videos->first()->file_link);
+        }
+        if(Storage::disk('public')->exists('photo',$videos->first()->thumbnail)){
+            Storage::disk('public')->delete('photo',$videos->first()->thumbnail);
+        }
+       $videos->delete();
+        return redirect('admin/video/list');
+    }
 
     public function create(Request $request)
     {

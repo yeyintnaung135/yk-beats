@@ -22,7 +22,9 @@ Route::get('/admin', function () {
 });
 Route::prefix('/admin')->group(function(){
     Route::get('/video/create', 'VideosController@createform');
+    Route::get('/video/list', 'VideosController@list');
     Route::post('/video/create', 'VideosController@create');
+    Route::post('/video/delete', 'VideosController@delete');
 });
 
 
