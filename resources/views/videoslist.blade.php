@@ -73,7 +73,7 @@
                                                                 <div class="gen-movie-contain">
                                                                     <div class="gen-movie-img"
                                                                          onclick="window.location.assign('{{url('detail/'.$vd->id)}}')">
-                                                                        <img src="{{asset('storage/'.$vd->thumbnail)}}">
+                                                                        <img src="{{url('/thumbnail/'.$vd->thumbnail)}}">
 
                                                                         <div class="gen-movie-add">
 

@@ -53,8 +53,18 @@ class VideosController extends Controller
         if ($validator->fails()) {
             return dd($validator->errors());
         }
-        $vpath = Storage::disk('public')->putFile('videos', $request->file('file_link'));
-        $tpath = Storage::disk('public')->putFile('photo', $request->file('thumbnail'));
+        if(!empty($request->file('file_link'))){
+            $vpath = Storage::disk('public')->putFile('videos', $request->file('file_link'));
+
+        }else{
+            $vpath = '';
+
+        }
+        $thumbname = time().'.'.$request->file('thumbnail')->extension();
+        $request->file('thumbnail')->move(public_path('thumbnail'),$thumbname);
+
+        $tpath = $thumbname;
+
         $input['file_link'] = $vpath;
         $input['thumbnail'] = $tpath;
         $input['uploaddatetime']=Carbon::createFromFormat('m/d/Y H:i A',$request->uploaddatetime)->toDateTimeString();

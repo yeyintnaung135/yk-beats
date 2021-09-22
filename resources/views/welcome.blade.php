@@ -56,7 +56,7 @@
                                                     <div class="gen-carousel-movies-style-3 movie-grid style-3">
                                                         <div class="gen-movie-contain">
                                                             <div class="gen-movie-img" onclick="window.location.assign('{{url('detail/'.$vd->id)}}')">
-                                                                <img src="{{asset('storage/'.$vd->thumbnail)}}">
+                                                                <img src="{{asset('/thumbnail/'.$vd->thumbnail)}}">
 
                                                                 <div class="gen-movie-add">
 
