@@ -1022,7 +1022,7 @@ Carousel Movies
 .gen-carousel-movies-style-3 .gen-movie-contain:hover .gen-movie-img:before { opacity: 1; }
 .gen-carousel-movies-style-3 .gen-movie-contain .gen-movie-img img { -webkit-transform: scale(1); transform: scale(1); transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; }
 .gen-carousel-movies-style-3 .gen-movie-contain:hover .gen-movie-img img { -webkit-transform: scale(1.2); transform: scale(1.2); }
-.gen-carousel-movies-style-3 .gen-movie-contain .gen-movie-action { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 9; opacity: 0; }
+.gen-carousel-movies-style-3 .gen-movie-contain .gen-movie-action { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 9; }
 .gen-carousel-movies-style-3 .gen-movie-contain:hover .gen-movie-action { opacity: 1; }
 .gen-carousel-movies-style-3 .gen-movie-contain .gen-movie-action .gen-button { padding: 0; width: 60px; height: 60px; opacity: 1; display: inline-block; line-height: 60px; text-align: center; -webkit-border-radius: 900px; -moz-border-radius: 900px; border-radius: 900px; }
 .gen-carousel-movies-style-3 .gen-movie-contain .gen-movie-action .gen-button i { margin: 0; padding: 0; }

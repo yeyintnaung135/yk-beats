@@ -67,7 +67,7 @@
                                                                         </ul>
                                                                     </div>
                                                                     <div class="gen-excerpt" style="height: 254px;">
-                                                                        <h6 style="font-size:17px;text-indent:  22px">{{$video->description}}</h6>
+                                                                        <div style="font-size:17px;text-indent:  22px">{!! $video->description !!}</div>
                                                                     </div>
 
                                                                     {{--                                                                    <div class="gen-socail-share">--}}
@@ -129,20 +129,19 @@
                                                     @foreach($sim_videos as $sv)
 
                                                         <div class="item">
-                                                            <div class="gen-episode-contain">
-                                                                <div class="gen-episode-img"
-                                                                     onclick="window.location.assign('{{url('detail/'.$sv->id)}}')">
+                                                            <div class="gen-episode-contain" style="z-index: 8 !important;">
+                                                                <div class="gen-episode-img">
                                                                     <img
-                                                                        src="{{asset('storage/'.$sv->thumbnail)}} ">
+                                                                        src="{{asset('/thumbnail/'.$sv->thumbnail)}} ">
 
                                                                     <div class="gen-movie-action">
                                                                         <a href="{{url('detail/'.$sv->id)}}"
-                                                                           class="gen-button">
+                                                                           class="gen-button" style="opacity:1 !important;">
                                                                             <i class="fa fa-play"></i>
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                                <div class="gen-info-contain">
+                                                                <div class="gen-info-contain" style="z-index: 8 !important;">
                                                                     <div class="gen-episode-info">
 
 

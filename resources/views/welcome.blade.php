@@ -104,15 +104,26 @@
                                                             </div>
                                                             <div class="gen-info-contain">
                                                                 <div class="gen-movie-info">
-                                                                    <h3 style="font-weight: bold;margin-bottom: 2px;"><a href="{{url('detail/'.$vd->id)}}">{{$vd->title}}</a></h3>
+                                                                    <h3 style="font-weight: bold;font-size:19px;margin-bottom: 2px;"><a href="{{url('detail/'.$vd->id)}}">{{$vd->title}}</a></h3>
 
-                                                                    <h3 style="font-size:19px;text-indent: 20px;"><a href="{{url('detail/'.$vd->id)}}">{{Str::limit($vd->description,40)}}</a></h3>
+                                                                    <h3 style="font-size:15px;text-indent: 20px;"><a href="{{url('detail/'.$vd->id)}}">{{Str::limit($vd->description,40)}}</a></h3>
 
 
 
                                                                 </div>
                                                                 <div class="gen-movie-meta-holder float-right">
                                                                     <ul>
+                                                                        <li>
+                                                                            @if($vd->sorforn == 'sold')
+                                                                                <span class="badge bg-danger" style="font-size:91%;line-height: 2 !important;">Sold Out</span>
+
+                                                                                    @elseif($vd->sorforn =='free')
+                                                                                <span class="badge bg-success" style="font-size:122%;">{{$vd->sorforn}}</span>
+
+                                                                            @else
+                                                                                <span class="badge bg-primary" style="font-size:91%;line-height: 2 !important;">For Sold</span>
+
+                                                                            @endif
                                                                         <li>{{\Carbon\Carbon::createFromDate($vd->uploaddatetime)->toDateString()}}</li>
 
 

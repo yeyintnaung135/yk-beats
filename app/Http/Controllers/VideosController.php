@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Videos;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 
@@ -29,11 +30,10 @@ class VideosController extends Controller
     public function delete(Request $request)
     {
         $videos=Videos::where('id',$request->id);
-        if(Storage::disk('public')->exists('videos',$videos->first()->file_link)){
-            Storage::disk('public')->delete('videos',$videos->first()->file_link);
+        if(File::exists(public_path($videos->first()->file_link))){
         }
-        if(Storage::disk('public')->exists('photo',$videos->first()->thumbnail)){
-            Storage::disk('public')->delete('photo',$videos->first()->thumbnail);
+        if(File::exists(public_path('thumbnail/'.$videos->first()->thumbnail))){
+            File::delete(public_path('thumbnail/'.$videos->first()->thumbnail));
         }
        $videos->delete();
         return redirect('admin/video/list');
