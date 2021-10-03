@@ -124,7 +124,7 @@
                                                                             <h3 style="font-weight: bold;font-size:19px;margin-bottom: 2px;"><a href="{{url('detail/'.$vd->id)}}">{{$vd->title}}</a></h3>
 
 
-                                                                            <h3 style="font-size:15px;text-indent: 20px;"><a href="{{url('detail/'.$vd->id)}}">{{Str::limit($vd->description,40)}}</a></h3>
+                                                                            <h3 style="font-size:15px;text-indent: 20px;"><a href="{{url('detail/'.$vd->id)}}">{!! Str::limit($vd->description,20) !!}</a></h3>
 
 
 

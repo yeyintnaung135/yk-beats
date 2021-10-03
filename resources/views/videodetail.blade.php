@@ -122,7 +122,7 @@
                                             </article>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="myowl">
                                         <div class="gen-season-holder">
                                             <div id="season_1" class="tab-pane ">
                                                 <div class="owl-carousel">

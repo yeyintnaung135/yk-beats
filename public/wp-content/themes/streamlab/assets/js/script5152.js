@@ -35,6 +35,7 @@ Design and Developed by: Gentechtree.com
     "use strict";
     jQuery(window).on('load', function(e) {
 
+
 // var s1 = jQuery("#mega-menu-wrap-primary").find(".mega-menu-toggle");
 // jQuery(".mega-menu-toggle").appendTo("#mega-menu-wrap-primary");
 

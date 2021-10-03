@@ -22,6 +22,11 @@
         .yk-banner-img {
             width: 100% !important;
         }
+        .myowl, .left {
+            width: 100%;
+
+            position: relative;
+        }
 
         img.wp-smiley,
         img.emoji {
@@ -97,6 +102,9 @@
             height: 100%;
             background: #1e283e;
             opacity: 0.6;
+        }
+        .owl-prev ,.owl-next {
+            top:-39px !important;
         }
 
 
@@ -285,8 +293,7 @@
 <script src="{{url('wp-content/themes/streamlab/assets/js/jquery.countTo5152.js?ver=1.0')}}"
         id='jquery-count-js'></script>
 <script src="{{url('wp-content/themes/streamlab/assets/js/isotope.pkgd.min5152.js?ver=1.0')}}" id='isotope-js'></script>
-<script src="{{url('wp-content/themes/streamlab/assets/js/owl.carousel.min531b.js?ver=2.3.4')}}"
-        id='owl-carousel-js'></script>
+
 <script src="{{url('wp-content/themes/streamlab/assets/js/jquery.magnific-popup.minf488.js?ver=1.1.0')}}"
         id='jquery-magnific-popup-js'></script>
 
@@ -300,40 +307,38 @@
 
     jQuery(function ($) {
 
-
-        $(".owl-carousel").owlCarousel({
-            items: 4,
-            autoplay: true,
-            margin:10,
-            autoplayHoverPause: true,
-            dots: false,
-            loop: true,
-            nav: true,
-            responsive:{
-                0:{
-                    items:1,
-                    nav:true
+            $(".owl-carousel").owlCarousel({
+                loop:true,
+                margin:10,
+                responsiveBaseElement: $(".myowl")[0],
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true
+                    },
+                    600:{
+                        items:3,
+                        nav:true
+                    },
+                    1000:{
+                        items:4,
+                        nav:true,
+                        loop:false
+                    }
                 },
-                600:{
-                    items:3,
-                    nav:false
-                },
-                1000:{
-                    items:4,
-                    nav:true,
-                    loop:false
-                }
-            },
-            navText: ["<span style='background:#3f9fff3b;width:22px;padding:12px;'><i class='ion-ios-arrow-left'></i></span>", "<span style='background:#3f9fff3b;width:22px;padding:12px;'><i class='ion-ios-arrow-right'></i></span>"]
+                navText: ["<span style='background:#3f9fff3b;top:-32px !important;width:22px;padding:12px;'><i class='ion-ios-arrow-left'></i></span>", "<span style='background:#3f9fff3b;width:22px;top:-32px !important;padding:12px;'><i class='ion-ios-arrow-right'></i></span>"]
 
 
-            // "singleItem:true" is a shortcut for:
-            // itemsDesktop : false,
-            // itemsDesktopSmall : false,
-            // itemsTablet: false,
-            // itemsMobile : false
+                // "singleItem:true" is a shortcut for:
+                // itemsDesktop : false,
+                // itemsDesktopSmall : false,
+                // itemsTablet: false,
+                // itemsMobile : false
 
-        });
+            });
+
+
 
     });
 
