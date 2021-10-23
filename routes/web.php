@@ -20,7 +20,7 @@ Route::get('/contact', 'VideosFrontController@contact');
 
 Route::get('/admin', function () {
     return view('admin.main');
-});
+})->middleware('auth');
 Route::prefix('/admin')->group(function(){
     Route::get('/video/create', 'VideosController@createform');
     Route::get('/video/list', 'VideosController@list');
