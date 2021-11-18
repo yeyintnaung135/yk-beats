@@ -65,13 +65,14 @@
                                         class="menu-item menu-item-type-post_type menu-item-object-page {{$home}} menu-item-home menu-item-has-children dropdown menu-item-5993">
                                         <a href="{{url('/')}}">Home</a>
                                     </li>
-                                    <li id="menu-item-5549"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-5549 {{$beat}}">
-                                        Beats<i class="fa fa-chevron-down gen-submenu-icon"></i>
-                                        <ul class="sub-menu">
+
+                                    <li id="nav-item dropdown"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-7578  {{$beat}}">
+                                        <a href="#">Beats</a><i class="fa fa-chevron-down gen-submenu-icon"></i>
+                                        <ul class="sub-menu ">
                                             @foreach($types as $t)
                                                 <li id="menu-item-5550"
-                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5550">
+                                                    class="menu-item navbar-nav menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5550">
                                                     <a href="{{url('/bytype/'.$t->type)}}">{{$t->type}}</a><i
                                                         class="gen-submenu-icon"></i>
                                                 </li>
@@ -87,50 +88,50 @@
                                         class="menu-item menu-item-type-post_type {{$contactinfo}} menu-item-object-page menu-item-home menu-item-has-children dropdown menu-item-5993">
                                         <a href="{{url('/contact')}}">Contact Info</a>
                                     </li>
-                                    <li id="menu-item-7578"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-7578">
-                                        <a href="#">Pages</a><i class="fa fa-chevron-down gen-submenu-icon"></i>
-                                        <ul class="sub-menu">
-                                            <li id="menu-item-5849"
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5849">
-                                                <a href="#">Blog</a><i
-                                                    class="fa fa-chevron-down gen-submenu-icon"></i>
-                                                <ul class="sub-menu">
-                                                    <li id="menu-item-5858"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5858">
-                                                        <a href="#">Blog With Sidebar</a><i
-                                                            class="fa fa-chevron-down gen-submenu-icon"></i>
-                                                        <ul class="sub-menu">
-                                                            <li id="menu-item-5860"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5860">
-                                                                <a href="../blog-left-sidebar/index.html">blog left
-                                                                    sidebar</a></li>
-                                                            <li id="menu-item-5859"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5859">
-                                                                <a href="../blog-right-sidebar/index.html">blog
-                                                                    right sidebar</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li id="menu-item-7581"
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7581">
-                                                <a href="#">Pricing</a><i
-                                                    class="fa fa-chevron-down gen-submenu-icon"></i>
-                                                <ul class="sub-menu">
-                                                    <li id="menu-item-7580"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7580">
-                                                        <a href="../pricing-table/index.html">Style 1</a></li>
-                                                    <li id="menu-item-7579"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7579">
-                                                        <a href="../pricing-plan/index.html">Style 2</a></li>
-                                                </ul>
-                                            </li>
-                                            <li id="menu-item-6440"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6440">
-                                                <a href="../contact-us/index.html">Contact Us</a></li>
-                                        </ul>
-                                    </li>
+{{--                                    <li id="menu-item-7578"--}}
+{{--                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-7578">--}}
+{{--                                        <a href="#">Pages</a><i class="fa fa-chevron-down gen-submenu-icon"></i>--}}
+{{--                                        <ul class="sub-menu">--}}
+{{--                                            <li id="menu-item-5849"--}}
+{{--                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5849">--}}
+{{--                                                <a href="#">Blog</a><i--}}
+{{--                                                    class="fa fa-chevron-down gen-submenu-icon"></i>--}}
+{{--                                                <ul class="sub-menu">--}}
+{{--                                                    <li id="menu-item-5858"--}}
+{{--                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5858">--}}
+{{--                                                        <a href="#">Blog With Sidebar</a><i--}}
+{{--                                                            class="fa fa-chevron-down gen-submenu-icon"></i>--}}
+{{--                                                        <ul class="sub-menu">--}}
+{{--                                                            <li id="menu-item-5860"--}}
+{{--                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5860">--}}
+{{--                                                                <a href="../blog-left-sidebar/index.html">blog left--}}
+{{--                                                                    sidebar</a></li>--}}
+{{--                                                            <li id="menu-item-5859"--}}
+{{--                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5859">--}}
+{{--                                                                <a href="../blog-right-sidebar/index.html">blog--}}
+{{--                                                                    right sidebar</a></li>--}}
+{{--                                                        </ul>--}}
+{{--                                                    </li>--}}
+{{--                                                </ul>--}}
+{{--                                            </li>--}}
+{{--                                            <li id="menu-item-7581"--}}
+{{--                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7581">--}}
+{{--                                                <a href="#">Pricing</a><i--}}
+{{--                                                    class="fa fa-chevron-down gen-submenu-icon"></i>--}}
+{{--                                                <ul class="sub-menu">--}}
+{{--                                                    <li id="menu-item-7580"--}}
+{{--                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7580">--}}
+{{--                                                        <a href="../pricing-table/index.html">Style 1</a></li>--}}
+{{--                                                    <li id="menu-item-7579"--}}
+{{--                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7579">--}}
+{{--                                                        <a href="../pricing-plan/index.html">Style 2</a></li>--}}
+{{--                                                </ul>--}}
+{{--                                            </li>--}}
+{{--                                            <li id="menu-item-6440"--}}
+{{--                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6440">--}}
+{{--                                                <a href="../contact-us/index.html">Contact Us</a></li>--}}
+{{--                                        </ul>--}}
+{{--                                    </li>--}}
                                 </ul>
                             </div>
                         </div>

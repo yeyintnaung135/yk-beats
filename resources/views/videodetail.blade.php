@@ -29,7 +29,7 @@
                                                                         data="{{ asset('storage/'.$video->file_link) }}"
                                                                         image="{{asset('storage/'.$video->thumbnail) }}"></video-component>
                                                                 @else
-                                                                    <iframe width="560" id="ykyt" height="315"
+                                                                    <iframe class="w-100 h-100" id="ykyt"
                                                                             src="{{$video->youtubelink.'?autoplay=1'}}"
                                                                             title="YouTube video player" frameborder="0"
                                                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

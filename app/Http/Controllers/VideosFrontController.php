@@ -51,7 +51,7 @@ class VideosFrontController extends Controller
     }
     public function freebeats()
     {
-        $videos = Videos::Where('sorforn','free')->paginate(12);
+        $videos = Videos::Where('sorforn','free')->orderBy('id','desc')->paginate(12);
         $types = Videos::query()->select('type')->distinct()->get();
 
 
